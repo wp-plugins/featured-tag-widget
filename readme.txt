@@ -2,7 +2,7 @@
 Contributors: Andrea Developer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148
 Tags: plugin, sidebar, widget, tag, featured, post, title, author, thumbnail, image, number
-Requires at least: 2.7
+Requires at least: 2.8
 Tested up to: 2.8.6
 Stable tag: 0.6
 
