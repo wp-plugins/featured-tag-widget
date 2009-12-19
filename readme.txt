@@ -59,8 +59,11 @@ If you enjoy this plugin, you can leave a small donation at https://www.paypal.c
 
 == Screenshots ==
 
+<img src="http://www.babypc.altervista.org/wp-plugin/admin_plugins.jpg" width="807" height="474" /><br /><br />
+<img src="http://www.babypc.altervista.org/wp-plugin/admin_widgets.jpg" width="810" height="478" /><br /><br />
+
 You can find screenshots at: http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
-You can view this plugin in action on <a href="http://" title="">Not available so far</a>
+You can view this plugin in action on <a href="" title="">Not available so far</a>
 
 
 
