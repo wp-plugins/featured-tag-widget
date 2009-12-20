@@ -63,6 +63,7 @@ Since it's released under the GPL, you can use it free of charge on your persona
 
 If you enjoy this plugin, you can leave a small donation at 
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) 
+
 for the time I spend writing and supporting this plugin. 
 
 Thank you.
