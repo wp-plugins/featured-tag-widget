@@ -16,10 +16,10 @@ Sidebar widget plugin that shows a list of posts for a particular tag.
 You can also add multiple instances of this widget. 
 This plugin gives you full control on the widget with these options:
 
-* - custom widget Title (or no Title)
-* - the Featured Tag (obviously required)
-* - how many posts for the featured Tag to show for each instance of the widget
-* - the posts informations to show (image thumbnail, title, author). 
+* custom widget Title (or no Title)
+* the Featured Tag (obviously required)
+* how many posts for the featured Tag to show for each instance of the widget
+* the posts informations to show (image thumbnail, title, author). 
 
 Have fun!
 
@@ -56,16 +56,20 @@ or use Wordpress automatic upgrade.
 == License ==
 
 Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal or commercial blog. 
-If you enjoy this plugin, you can leave a small donation at https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) for the time I spend writing and supporting this plugin. Thank you.
+
+If you enjoy this plugin, you can leave a small donation at 
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 
+(Donate with PayPal) for the time I spend writing and supporting this plugin. 
+
+Thank you.
 
 
 
 == Screenshots ==
 
-1. This screen shot description corresponds to Wordpress Admin Plugins page 
-admin_plugins.jpg
-2. This screen shot description corresponds to Wordpress Admin Widgets page 
-admin_widgets.jpg
+This screen shot description corresponds to Wordpress Admin Plugins page admin_plugins.jpg
+
+This screen shot description corresponds to Wordpress Admin Widgets page admin_widgets.jpg
 
 
 You can find screenshots at: http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
@@ -103,7 +107,7 @@ You can view this plugin in action on <a href="" title="">Not available so far</
 * Changed method of calling the tags.
 
 = 0.1 =
-* Initial release
+* Initial release.
 
 
 
