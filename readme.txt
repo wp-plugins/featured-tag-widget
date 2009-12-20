@@ -72,9 +72,8 @@ Thank you.
 
 == Screenshots ==
 
-This screen shot description corresponds to Wordpress Admin Plugins page screenshot-1.jpg
-
-This screen shot description corresponds to Wordpress Admin Widgets page screenshot-2.jpg
+1. Wordpress Admin Plugins page screenshot-1.jpg
+2. Wordpress Admin Widgets page screenshot-2.jpg
 
 You can find screenshots at:
 http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
