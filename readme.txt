@@ -62,9 +62,9 @@ If you enjoy this plugin, you can leave a small donation at https://www.paypal.c
 
 == Screenshots ==
 
-1. This screen shot description corresponds to Admin Plugins Page 
+1. This screen shot description corresponds to Wordpress Admin Plugins page 
 admin_plugins.jpg
-2. This screen shot description corresponds to Admin Widgets Page 
+2. This screen shot description corresponds to Wordpress Admin Widgets page 
 admin_widgets.jpg
 
 
@@ -76,41 +76,41 @@ You can view this plugin in action on <a href="" title="">Not available so far</
 
 == Changelog ==
 
-0.6
-* Added 'No Tag found' behaviour
-* Added more code comments
+= 0.6 =
+* Added 'No Tag found' behaviour.
+* Added more code comments.
 
-0.5
-* Improved method of calling the tags
+= 0.5 =
+* Improved method of calling the tags.
 * General code cleanup.
 
-0.4
-* Good version :D
-* Added more options
-* Added GPL license.txt file
-* Added Readme.txt file
+= 0.4 =
+* Good version :D.
+* Added more options.
+* Added GPL license.txt file.
+* Added Readme.txt file.
 
-0.3.1
-* More efficient and logical code
-* General code cleanup
-* Added more code comments
+= 0.3.1 =
+* More efficient and logical code.
+* General code cleanup.
+* Added more code comments.
 
-0.3
-* Fixed the multi instance feature
+= 0.3 =
+* Fixed the multi instance feature.
 
-0.2
-* Added Code comments
-* Changed method of calling the tags
+= 0.2 =
+* Added Code comments.
+* Changed method of calling the tags.
 
-0.1
+= 0.1 =
 * Initial release
 
 
 
 == Frequently Asked Questions ==
 
-Waiting for questions...
-Your Support Is Much Appreciated! Thank you.
+* Waiting for questions...
+* Your Support Is Much Appreciated! Thank you.
 
 
 
