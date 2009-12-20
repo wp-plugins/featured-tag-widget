@@ -55,11 +55,12 @@ or use Wordpress automatic upgrade.
 
 == License ==
 
-Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal or commercial blog. 
+Good news, this plugin is free for everyone! 
+Since it's released under the GPL, you can use it free of charge on your personal or commercial blog. 
 
 If you enjoy this plugin, you can leave a small donation at 
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 
-(Donate with PayPal) for the time I spend writing and supporting this plugin. 
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) 
+for the time I spend writing and supporting this plugin. 
 
 Thank you.
 
@@ -67,12 +68,12 @@ Thank you.
 
 == Screenshots ==
 
-This screen shot description corresponds to Wordpress Admin Plugins page admin_plugins.jpg
+This screen shot description corresponds to Wordpress Admin Plugins page screenshot-1.jpg
 
-This screen shot description corresponds to Wordpress Admin Widgets page admin_widgets.jpg
+This screen shot description corresponds to Wordpress Admin Widgets page screenshot-2.jpg
 
-
-You can find screenshots at: http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
+You can find screenshots at:
+http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
 
 You can view this plugin in action on <a href="" title="">Not available so far</a>
 
@@ -115,6 +116,8 @@ You can view this plugin in action on <a href="" title="">Not available so far</
 
 * Waiting for questions...
 * Your Support Is Much Appreciated! Thank you.
+
+
 
 
 
