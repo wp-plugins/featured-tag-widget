@@ -15,10 +15,15 @@ This widget plugin shows a list of posts for a particular Tag in your sidebar. Y
 Sidebar widget plugin that shows a list of posts for a particular tag.
 You can also add multiple instances of this widget. 
 This plugin gives you full control on the widget with these options:
+
 - custom widget Title (or no Title)
+
 - the Featured Tag (obviously required)
+
 - how many posts for the featured Tag to show for each instance of the widget
+
 - the posts informations to show (image thumbnail, title, author). 
+
 Have fun!
 
 
@@ -62,7 +67,9 @@ If you enjoy this plugin, you can leave a small donation at https://www.paypal.c
 
 <p><img src="http://www.babypc.altervista.org/_altervista_ht/admin_plugins.jpg" width="807" height="474" /></p><br />
 <p><img src="http://www.babypc.altervista.org/_altervista_ht/admin_widgets.jpg" width="810" height="478" /></p><br />
+
 You can find screenshots at: http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
+
 You can view this plugin in action on <a href="" title="">Not available so far</a>
 
 
