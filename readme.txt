@@ -1,7 +1,7 @@
 === Featured Tag Widget ===
 Contributors: Andrea Developer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148
-Tags: plugin, sidebar, widget, tag, featured, post, title, author, thumbnail, image, number
+Tags: tag, featured, sidebar, widget, plugin, gallery, magazine, post, title, author, thumbnail, image, number
 Requires at least: 2.7
 Tested up to: 2.9
 Stable tag: 0.6
@@ -25,6 +25,11 @@ This plugin gives you full control on the widget with these options:
 - post author 
 
 Have fun!
+
+* Suitable for featured tags, Magazine covers and articles lists, links, business directory, etc.
+* With two istances you can for example put just one image on one istance of the widget and a full list of posts on another instance, in order to have a perfect summary of specific issues.
+* You can also use this widget as a Sidebar Gallery, showing just the images.
+* Let us know...
 
 
 
