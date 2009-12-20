@@ -3,7 +3,7 @@ Contributors: Andrea Developer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148
 Tags: plugin, sidebar, widget, tag, featured, post, title, author, thumbnail, image, number
 Requires at least: 2.7
-Tested up to: 2.8.6
+Tested up to: 2.9
 Stable tag: 0.6
 
 This widget plugin shows a list of posts for a particular Tag in your sidebar. You can also add multiple instances of this widget. 
@@ -60,6 +60,10 @@ or use Wordpress automatic upgrade.
 
 Good news, this plugin is free for everyone! 
 Since it's released under the GPL, you can use it free of charge on your personal or commercial blog. 
+
+
+
+== Donations ==
 
 If you enjoy this plugin, you can leave a small donation at 
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) 
