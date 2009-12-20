@@ -2,7 +2,7 @@
 Contributors: Andrea Developer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148
 Tags: plugin, sidebar, widget, tag, featured, post, title, author, thumbnail, image, number
-Requires at least: 2.8
+Requires at least: 2.7
 Tested up to: 2.8.6
 Stable tag: 0.6
 
@@ -46,7 +46,8 @@ email: andreadeveloper@gmail.com
 
 To upgrade  this plugin, please visit:
 http://wordpress.org/extend/plugins/featured-tag-widget/
-Or use automatic upgrade.
+and download latest version
+or use Wordpress automatic upgrade.
 
 
 
@@ -59,8 +60,9 @@ If you enjoy this plugin, you can leave a small donation at https://www.paypal.c
 
 == Screenshots ==
 
-<img src="http://www.babypc.altervista.org/wp-plugin/admin_plugins.jpg" width="807" height="474" /><br /><br />
-<img src="http://www.babypc.altervista.org/wp-plugin/admin_widgets.jpg" width="810" height="478" /><br /><br />
+http://www.babypc.altervista.org/wp-plugin/admin_plugins.jpg
+
+http://www.babypc.altervista.org/wp-plugin/admin_widgets.jpg
 
 You can find screenshots at: http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
 You can view this plugin in action on <a href="" title="">Not available so far</a>
