@@ -19,7 +19,10 @@ This plugin gives you full control on the widget with these options:
 * custom widget Title (or no Title)
 * the Featured Tag (obviously required)
 * how many posts for the featured Tag to show for each instance of the widget
-* the posts informations to show (image thumbnail, title, author). 
+* the posts informations to show: 
+- image thumbnail (if present in the post)
+- post title
+- post author 
 
 Have fun!
 
