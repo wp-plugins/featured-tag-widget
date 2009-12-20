@@ -117,7 +117,7 @@ You can view this plugin in action on <a href="" title="">Not available so far</
 
 == Frequently Asked Questions ==
 
-= I can't see some images in my Featured Tag Widget list  =
+= I do not see some of the images in my Featured Tag Widget list  =
 
 This widget plugin takes image thumbnails only if they are present as thumb in the post.
 If you have multiple images thumb in your post, it will take thumb of the first uploaded image.
