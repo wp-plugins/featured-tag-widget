@@ -2,9 +2,9 @@
 /*
 Plugin Name: Featured Tag Widget
 Plugin URI: http://wordpress.org/extend/plugins/featured-tag-widget/
-Description: This widget plugin shows a list of posts for a particular Tag in your sidebar. You can also add multiple instances of this widget. This plugin gives you full control on the widget with these options: custom widget Title (or no Title), the Featured Tag selection (obviously required), how many posts for the featured Tag to show for each instance of the widget, the posts informations to show (image thumbnail, title, author). 
+Description: This widget plugin shows a list of posts for a particular Tag in your sidebar with many options. You can also add multiple instances of this widget. This plugin gives you full control on the widget with these options: custom widget Title (or no Title), custom text for the description of the content or whatever, the Featured Tag selection (obviously required to show posts content), how many posts for the featured Tag to show for each instance of the widget, the posts informations to show (image thumbnail, title, author). 
 Author: Andrea Developer
-Version: 0.6
+Version: 0.7
 Author URI: http://wordpress.org/extend/plugins/featured-tag-widget/
 
 This program is free software; you can redistribute it and/or
@@ -43,7 +43,8 @@ function widget_ftwp( $args, $widget_args = 1 ) {
         if ( !isset($options[$number]) )
                 return;
 
-        $featuredtag = $options[$number]['tag'];
+        $customtext = $options[$number]['customtext'];
+		$featuredtag = $options[$number]['tag'];
 		//$nposts = $options[$number]['nposts'];
         $nposts = empty($options[$number]['nposts']) ? __('-1') : $options[$number]['nposts'];		
 		$showimage = $options[$number]['showimage'];
@@ -58,13 +59,18 @@ function widget_ftwp( $args, $widget_args = 1 ) {
 
 		//-------------------------------------------------- *  The loop START
 			  
-			  echo $before_widget;
+			  //echo $before_widget;
                if ($title){ 
 					echo $before_title . $title . $after_title .'';
-               } 			  
+               } 			
+			   
+            // write Custom Text Area    
+			if ($customtext){ ?>
+				<div class="featured_tag_post"><?php echo $customtext; ?><br /><br /></div>
+			  <?php } 		   
 			  		  		  		  
 			// set $my_tag as featured tag
-			$all_tags = get_tags(); 
+			 $all_tags = get_tags(); 
 				foreach($all_tags as $the_tag):
 					if ($the_tag->term_id==$featuredtag) {
 					   $my_tag = $the_tag->slug;				   
@@ -90,7 +96,7 @@ function widget_ftwp( $args, $widget_args = 1 ) {
                         <?php if ($showauthor){ ?>
                             <span class="byline"><em><?php the_author_posts_link(); ?></em></span><br />
                         <?php } ?>
-                        <br />             
+                        <br />         
                     </div>
 				<?php } ?>
 
@@ -100,7 +106,7 @@ function widget_ftwp( $args, $widget_args = 1 ) {
               
            
           <?php
-          echo $after_widget;
+          //echo $after_widget;
 		  
 		//-------------------------------------------------- *  The loop END
 }
@@ -151,15 +157,17 @@ function widget_ftwp_control( $widget_args = 1 ) {
                         // compile data from $widget_ftwp_instance
                         if ( !isset($widget_ftwp_instance['tag']) && isset($options[$widget_number]) ) // user clicked cancel
                                 continue;
-                        $featuredtag = wp_specialchars( $widget_ftwp_instance['tag'] );
-                        $title = strip_tags(stripslashes($widget_ftwp_instance['title'])); 										 
+                        
+                        $title = strip_tags(stripslashes($widget_ftwp_instance['title'])); 
+						$customtext = strip_tags(stripslashes($widget_ftwp_instance['customtext'])); 
+						$featuredtag = wp_specialchars( $widget_ftwp_instance['tag'] );
 						$nposts = $widget_ftwp_instance['nposts'];	
 						$nposts = preg_replace("/[^0-9]/i", "", $nposts);  // numbers only
 						$showimage = isset( $widget_ftwp_instance['showimage'] ) ? $widget_ftwp_instance['showimage'] : 0;
 						$showtitle = isset( $widget_ftwp_instance['showtitle'] ) ? $widget_ftwp_instance['showtitle'] : 0;	
 						$showauthor = isset( $widget_ftwp_instance['showauthor'] ) ? $widget_ftwp_instance['showauthor'] : 0;						
 													 						
-                        $options[$widget_number] = array( 'tag' => $featuredtag, 'title' => $title, 'nposts' => $nposts, 'showimage' => $showimage, 'showtitle' => $showtitle, 'showauthor' => $showauthor );  						// Even simple widgets should store stuff in array, rather than in scalar
+                        $options[$widget_number] = array( 'customtext' => $customtext, 'tag' => $featuredtag, 'title' => $title, 'nposts' => $nposts, 'showimage' => $showimage, 'showtitle' => $showtitle, 'showauthor' => $showauthor );  						// Even simple widgets should store stuff in array, rather than in scalar
                 }
 
                 update_option('widget_ftwp', $options);
@@ -173,6 +181,7 @@ function widget_ftwp_control( $widget_args = 1 ) {
                 $number = '%i%';
         } else {
                 $title = htmlspecialchars($options[$number]['title'], ENT_QUOTES);
+				$customtext = htmlspecialchars($options[$number]['customtext'], ENT_QUOTES);
                 $featuredtag = attribute_escape($options[$number]['tag']);				
                 $featuredtag = htmlspecialchars($options[$number]['tag'], ENT_QUOTES);
 				$nposts = stripslashes($options[$number]['nposts']);
@@ -197,6 +206,13 @@ function widget_ftwp_control( $widget_args = 1 ) {
         </label>
     </p>
     <p>
+    
+    <p style="text-align:left;">
+       <label for="widget-featured-tag-customtext-<?php echo $number; ?>"><?php echo __('Custom Text:'); ?>
+       <textarea style="width: 100%; height: 80px;" id="widget-featured-tag-customtext-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][customtext]"><?php echo $customtext; ?></textarea>
+        </label>
+    </p>
+        
 	<?php $all_tags = get_tags('orderby=name&order=ASC'); ?>      		    
 	<?php if ( $all_tags ) {  ?>
 		 <label for="widget-featured-tag-tag-<?php echo $number; ?>"><?php echo __('Tag:', 'widgets'); ?>
@@ -207,29 +223,34 @@ function widget_ftwp_control( $widget_args = 1 ) {
          </select>
         </label>                                
         </p> 
+        
         <p style="text-align:left;">
            <label for="widget-featured-tag-n-<?php echo $number; ?>"><?php echo __('Number of posts to show:'); ?>
            <input size="5" id="widget-featured-tag-n-<?php echo $number; ?>" value="<?php echo $nposts; ?>" name="widget-featured-tag[<?php echo $number; ?>][nposts]"></input> (<i>empty = all</i>)
             </label>
         </p> 
+        
         <p style="text-align:left;">
            <label for="widget-featured-tag-show-image-<?php echo $number; ?>"><?php echo __('Show Posts Images Thumb:'); ?>       
            <input type="checkbox" id="widget-featured-tag-show-image-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showimage]" 
             <?php checked( $showimage,true ); ?>  /></input> (<i>if present</i>)
             </label>
         </p>    
+        
         <p style="text-align:left;">
            <label for="widget-featured-tag-show-title-<?php echo $number; ?>"><?php echo __('Show Posts Titles:'); ?>       
            <input type="checkbox" id="widget-featured-tag-show-title-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showtitle]" 
             <?php checked( $showtitle,true ); ?>  /></input>    
             </label>
         </p>     
+        
         <p style="text-align:left;">
            <label for="widget-featured-tag-show-author-<?php echo $number; ?>"><?php echo __('Show Posts Authors:'); ?>       
            <input type="checkbox" id="widget-featured-tag-show-author-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showauthor]" 
             <?php checked( $showauthor,true ); ?>  /></input>
             </label>
         </p>    
+        
 	<?php } else { echo 'Tag: No Tag found ( <i>Insert at least one Tag in any post</i> )'; }?>           
     <input type="hidden" id="widget-featured-tag-submit-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][submit]" value="1" />
 <?php 
@@ -242,9 +263,9 @@ function widget_ftwp_register() {
         if ( !$options = get_option('widget_ftwp') )
                 $options = array();
 
-        $widget_ops = array('classname' => 'widget_ftwp', 'description' => __('A list of posts for a particular tag.'));
+        $widget_ops = array('classname' => 'widget_ftwp', 'description' => __('The posts for a particular tag.'));
         $control_ops = array('width' => 400, 'height' => 350, 'id_base' => 'ftwp');
-        $name = __('Featured Tag');
+        $name = __('Featured Tag Widget');
 
         $registered = false;
         foreach ( array_keys($options) as $o ) {
@@ -271,7 +292,8 @@ add_action( 'widgets_init', 'widget_ftwp_register' );
 
 
 
-//-------------------------------------------------- * Shows image thumbnail(for width & height refer to your wordpress/admin/settings/media)
+//-------------------------------------------------- * Shows image thumbnail (for width & height refer to your wordpress/admin/settings/media)
+
 function get_thumb_url() { 
   global $post;
 

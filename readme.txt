@@ -1,23 +1,24 @@
 === Featured Tag Widget ===
 Contributors: Andrea Developer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148
-Tags: tag, featured, sidebar, widget, plugin, gallery, magazine, post, title, author, thumbnail, image, number
+Tags: tag, featured, sidebar, widget, multi-widget, text, plugin, gallery, magazine, post, title, author, thumbnail, image, number
 Requires at least: 2.7
 Tested up to: 2.9
-Stable tag: 0.6
+Stable tag: 0.7
 
-This widget plugin shows a list of posts for a particular Tag in your sidebar. You can also add multiple instances of this widget. 
+This widget plugin displays a list of posts (and much more) for a particular Tag in your sidebar. You can also add multiple instances of this widget.  
 
 
 
 == Description ==
 
-Sidebar widget plugin that shows a list of posts for a particular tag.
+Sidebar widget plugin that displays a list of posts (and much more) for a particular tag.
 You can also add multiple instances of this widget. 
 This plugin gives you full control on the widget with these options:
 
 * custom widget Title (or no Title)
-* the Featured Tag (obviously required)
+* custom text for the description of the content or whatever
+* the Featured Tag (obviously required to show posts content)
 * how many posts for the featured Tag to show for each instance of the widget
 * the posts informations to show: 
 - image thumbnail (if present in the post)
@@ -28,8 +29,9 @@ Have fun!
 
 * Suitable for featured tags, Magazine covers and articles lists, links, business directory, etc.
 * With two istances you can for example put just one image on one istance of the widget and a full list of posts on another instance, in order to have a perfect summary of specific issues.
-* You can also use this widget as a Sidebar Gallery, showing just the images.
-* Let me know...
+* You can also use this widget as a Sidebar Gallery, showing just the images
+* Insert a custom text box and, why not, an image or more for a particular tag.
+* Let me know... Thank you.
 
 Andrea Developer - email: andreadeveloper (at) gmail.com
 
@@ -41,13 +43,15 @@ To install the plugin, please follow these steps:
 
 1. Download the zipped plugin file to your local machine.
 2. Unzip the file.
-3. Upload the 'featured-tag-widget' folder to the '/wp-content/plugins/' directory on your webserver.
+3. Upload the *'featured-tag-widget'* folder to the *'/wp-content/plugins/'* directory on your webserver.
 4. Activate the plugin through the 'Plugins' menu in WordPress.
-5. Go to 'Widgets' menu in WordPress and add the 'Featured Tag' widget in your sidebar.   You can also add several instances of this widget.
+5. Go to 'Widgets' menu in WordPress and add the *'Featured Tag Widget'* in your sidebar.   You can also add several instances of this widget.
 6. Open the widget options and specify what tag to pull the posts from.
    Write the number of posts to show for each instance of the widget (leave empty to show all posts).
    Checkbox the informations to show: images (thumbnails), titles, authors. 
    Insert a widget title or not to fit your design.
+   Insert a custom text for the description of the content or whatever (appears on top).
+
 
 
 
@@ -71,7 +75,6 @@ Since it's released under the GPL, you can use it free of charge on your persona
 
 If you enjoy this plugin, you can leave a small donation at 
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) 
-
 for the time I spend writing and supporting this plugin. 
 
 Thank you.
@@ -91,6 +94,9 @@ You can view this plugin in action on <a href="" title="">Not available so far</
 
 
 == Changelog ==
+
+= 0.7 =
+* Added a Custom Text area. An optional description of the content or whatever.
 
 = 0.6 =
 * Added 'No Tag found' behaviour.
