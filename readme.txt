@@ -29,7 +29,9 @@ Have fun!
 * Suitable for featured tags, Magazine covers and articles lists, links, business directory, etc.
 * With two istances you can for example put just one image on one istance of the widget and a full list of posts on another instance, in order to have a perfect summary of specific issues.
 * You can also use this widget as a Sidebar Gallery, showing just the images.
-* Let us know...
+* Let me know...
+
+Andrea Developer - email: andreadeveloper (at) gmail.com
 
 
 
@@ -46,9 +48,6 @@ To install the plugin, please follow these steps:
    Write the number of posts to show for each instance of the widget (leave empty to show all posts).
    Checkbox the informations to show: images (thumbnails), titles, authors. 
    Insert a widget title or not to fit your design.
-
-Andrea Developer
-email: andreadeveloper@gmail.com
 
 
 
