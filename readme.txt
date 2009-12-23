@@ -18,7 +18,7 @@ This plugin gives you full control on the widget with these options:
 
 * custom widget Title (or no Title)
 * custom text for the description of the content or whatever
-* the Featured Tag (obviously required to show posts content)
+* the Featured Tag dropdown menu (obviously required to show posts content)
 * how many posts for the featured Tag to show for each instance of the widget
 * the posts informations to show: 
 - image thumbnail (if present in the post)
@@ -46,7 +46,7 @@ To install the plugin, please follow these steps:
 3. Upload the *'featured-tag-widget'* folder to the *'/wp-content/plugins/'* directory on your webserver.
 4. Activate the plugin through the 'Plugins' menu in WordPress.
 5. Go to 'Widgets' menu in WordPress and add the *'Featured Tag Widget'* in your sidebar.   You can also add several instances of this widget.
-6. Open the widget options and specify what tag to pull the posts from.
+6. Open the widget options and specify in the dropdown menu what tag to pull the posts from.
    Write the number of posts to show for each instance of the widget (leave empty to show all posts).
    Checkbox the informations to show: images (thumbnails), titles, authors. 
    Insert a widget title or not to fit your design.
@@ -104,6 +104,7 @@ You can view this plugin in action on <a href="" title="">Not available so far</
 
 = 0.5 =
 * Improved method of calling the tags.
+* Dropdown menu.
 * General code cleanup.
 
 = 0.4 =
