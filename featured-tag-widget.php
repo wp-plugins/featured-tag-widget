@@ -2,7 +2,7 @@
 /*
 Plugin Name: Featured Tag Widget
 Plugin URI: http://wordpress.org/extend/plugins/featured-tag-widget/
-Description: This widget plugin shows a list of posts for a particular Tag in your sidebar with many options. You can also add multiple instances of this widget. This plugin gives you full control on the widget with these options: custom widget Title (or no Title), custom text for the description of the content or whatever, the Featured Tag selection (obviously required to show posts content), how many posts for the featured Tag to show for each instance of the widget, the posts informations to show (image thumbnail, title, author). 
+Description: This widget plugin displays in your sidebar a list of posts (and much more) for a particular Tag. You can also add multiple instances of the widget.
 Author: Andrea Developer
 Version: 0.7
 Author URI: http://wordpress.org/extend/plugins/featured-tag-widget/
