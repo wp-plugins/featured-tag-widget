@@ -36,6 +36,11 @@ Have fun!
 Andrea Developer - email: andreadeveloper (at) gmail.com
 
 
+* If you would like to make a small (or large) contribution towards future development please consider making a donation.
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) 
+Thank you.
+
+
 
 == Installation ==
 
@@ -54,13 +59,24 @@ To install the plugin, please follow these steps:
 
 
 
-
 == Upgrade Notice ==
 
 To upgrade  this plugin, please visit:
 http://wordpress.org/extend/plugins/featured-tag-widget/
 and download latest version
 or use Wordpress automatic upgrade.
+
+
+
+== Screenshots ==
+
+1. Wordpress Admin Plugins page screenshot-1.jpg
+2. Wordpress Admin Widgets page screenshot-2.jpg
+
+You can find screenshots at:
+http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
+
+You can view this plugin in action on <a href="" title="">Not available so far</a>
 
 
 
@@ -76,18 +92,6 @@ Since it's released under the GPL, you can use it free of charge on your persona
 If you would like to make a small (or large) contribution towards future development please consider making a donation.
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) 
 Thank you.
-
-
-
-== Screenshots ==
-
-1. Wordpress Admin Plugins page screenshot-1.jpg
-2. Wordpress Admin Widgets page screenshot-2.jpg
-
-You can find screenshots at:
-http://wordpress.org/extend/plugins/featured-tag-widget/screenshots/
-
-You can view this plugin in action on <a href="" title="">Not available so far</a>
 
 
 
