@@ -98,8 +98,7 @@ Thank you.
 == Changelog ==
 
 = 0.8 =
-* Added Tag info in the Admin dropdown menu - Tag: " Name - ID - (total posts) "
-
+* Added Tag info in the Admin dropdown menu - Tag: " Name - ID - (total posts) ". Now you know the tagID and how many posts exist for each tag.
 = 0.7 =
 * Added a Custom Text area. An optional description of the content or whatever.
 
