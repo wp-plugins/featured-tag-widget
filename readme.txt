@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: tag, featured, sidebar, widget, multi-widget, text, plugin, gallery, magazine, post, title, author, thumbnail, image, number
 Requires at least: 2.7
 Tested up to: 2.9
-Stable tag: 0.7
+Stable tag: 0.8
 
 This widget plugin displays a list of posts (and much more) for a particular Tag in your sidebar. You can also add multiple instances of this widget.  
 
@@ -18,7 +18,7 @@ This plugin gives you full control on the widget with these options:
 
 * custom widget Title (or no Title)
 * custom text for the description of the content or whatever
-* the Featured Tag dropdown menu (obviously required to show posts content)
+* the Featured Tag dropdown menu (obviously required to show posts content), shows Tag: "Name-ID-(total posts)"
 * how many posts for the featured Tag to show for each instance of the widget
 * the posts informations to show: 
 - image thumbnail (if present in the post)
@@ -45,7 +45,7 @@ To install the plugin, please follow these steps:
 2. Unzip the file.
 3. Upload the *'featured-tag-widget'* folder to the *'/wp-content/plugins/'* directory on your webserver.
 4. Activate the plugin through the 'Plugins' menu in WordPress.
-5. Go to 'Widgets' menu in WordPress and add the *'Featured Tag Widget'* in your sidebar.   You can also add several instances of this widget.
+5. Go to 'Widgets' section under 'Appearance' menu in WordPress and add the *'Featured Tag Widget'* in your sidebar.   You can also add several instances of this widget.
 6. Open the widget options and specify in the dropdown menu what tag to pull the posts from.
    Write the number of posts to show for each instance of the widget (leave empty to show all posts).
    Checkbox the informations to show: images (thumbnails), titles, authors. 
@@ -73,10 +73,8 @@ Since it's released under the GPL, you can use it free of charge on your persona
 
 == Donations ==
 
-If you enjoy this plugin, you can leave a small donation at 
+If you would like to make a small (or large) contribution towards future development please consider making a donation.
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296148 (Donate with PayPal) 
-for the time I spend writing and supporting this plugin. 
-
 Thank you.
 
 
@@ -94,6 +92,9 @@ You can view this plugin in action on <a href="" title="">Not available so far</
 
 
 == Changelog ==
+
+= 0.8 =
+* Added Tag info in the Admin dropdown menu - Tag: " Name - ID - (total posts) "
 
 = 0.7 =
 * Added a Custom Text area. An optional description of the content or whatever.

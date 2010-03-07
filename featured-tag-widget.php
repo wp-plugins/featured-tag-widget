@@ -4,7 +4,7 @@ Plugin Name: Featured Tag Widget
 Plugin URI: http://wordpress.org/extend/plugins/featured-tag-widget/
 Description: This widget plugin displays in your sidebar a list of posts (and much more) for a particular Tag. You can also add multiple instances of the widget.
 Author: Andrea Developer
-Version: 0.7
+Version: 0.8
 Author URI: http://wordpress.org/extend/plugins/featured-tag-widget/
 
 This program is free software; you can redistribute it and/or
@@ -215,41 +215,43 @@ function widget_ftwp_control( $widget_args = 1 ) {
         
 	<?php $all_tags = get_tags('orderby=name&order=ASC'); ?>      		    
 	<?php if ( $all_tags ) {  ?>
-		 <label for="widget-featured-tag-tag-<?php echo $number; ?>"><?php echo __('Tag:', 'widgets'); ?>
-         <select id="widget-featured-tag-tag-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][tag]">		
-            <?php foreach($all_tags as $the_tag):?>
-               <option <?php if ($the_tag->term_id==$featuredtag) echo 'selected="selected"';?> value="<?php echo $the_tag->term_id;?>"><?php echo $the_tag->name; ?> - ID <?php echo $the_tag->term_id;?></option>
-            <?php endforeach;?>
-         </select>
-        </label>                                
-        </p> 
-        
-        <p style="text-align:left;">
-           <label for="widget-featured-tag-n-<?php echo $number; ?>"><?php echo __('Number of posts to show:'); ?>
-           <input size="5" id="widget-featured-tag-n-<?php echo $number; ?>" value="<?php echo $nposts; ?>" name="widget-featured-tag[<?php echo $number; ?>][nposts]"></input> (<i>empty = all</i>)
-            </label>
-        </p> 
-        
-        <p style="text-align:left;">
-           <label for="widget-featured-tag-show-image-<?php echo $number; ?>"><?php echo __('Show Posts Images Thumb:'); ?>       
-           <input type="checkbox" id="widget-featured-tag-show-image-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showimage]" 
-            <?php checked( $showimage,true ); ?>  /></input> (<i>if present</i>)
-            </label>
-        </p>    
-        
-        <p style="text-align:left;">
-           <label for="widget-featured-tag-show-title-<?php echo $number; ?>"><?php echo __('Show Posts Titles:'); ?>       
-           <input type="checkbox" id="widget-featured-tag-show-title-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showtitle]" 
-            <?php checked( $showtitle,true ); ?>  /></input>    
-            </label>
-        </p>     
-        
-        <p style="text-align:left;">
-           <label for="widget-featured-tag-show-author-<?php echo $number; ?>"><?php echo __('Show Posts Authors:'); ?>       
-           <input type="checkbox" id="widget-featured-tag-show-author-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showauthor]" 
-            <?php checked( $showauthor,true ); ?>  /></input>
-            </label>
-        </p>    
+    
+             <label for="widget-featured-tag-tag-<?php echo $number; ?>"><?php echo __('Tag:', 'widgets'); ?>
+             <select id="widget-featured-tag-tag-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][tag]">		
+                <?php foreach($all_tags as $the_tag):?>
+                	<?php $postcounter = $the_tag->count;?>
+                   <option <?php if ($the_tag->term_id==$featuredtag) echo 'selected="selected"';?> value="<?php echo $the_tag->term_id;?>"><?php echo $the_tag->name; ?> - <?php echo $the_tag->term_id;?> - (<?php echo $postcounter;?>)</option>
+                <?php endforeach;?>
+             </select>
+            </label> Name - ID - (total posts)                                
+            </p> 
+            
+            <p style="text-align:left;">
+               <label for="widget-featured-tag-n-<?php echo $number; ?>"><?php echo __('Number of posts to show:'); ?>
+               <input size="5" id="widget-featured-tag-n-<?php echo $number; ?>" value="<?php echo $nposts; ?>" name="widget-featured-tag[<?php echo $number; ?>][nposts]"></input> (<i>empty = all</i>)
+                </label>
+            </p> 
+            
+            <p style="text-align:left;">
+               <label for="widget-featured-tag-show-image-<?php echo $number; ?>"><?php echo __('Show Posts Images Thumb:'); ?>       
+               <input type="checkbox" id="widget-featured-tag-show-image-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showimage]" 
+                <?php checked( $showimage,true ); ?>  /></input> (<i>if present</i>)
+                </label>
+            </p>    
+            
+            <p style="text-align:left;">
+               <label for="widget-featured-tag-show-title-<?php echo $number; ?>"><?php echo __('Show Posts Titles:'); ?>       
+               <input type="checkbox" id="widget-featured-tag-show-title-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showtitle]" 
+                <?php checked( $showtitle,true ); ?>  /></input>    
+                </label>
+            </p>     
+            
+            <p style="text-align:left;">
+               <label for="widget-featured-tag-show-author-<?php echo $number; ?>"><?php echo __('Show Posts Authors:'); ?>       
+               <input type="checkbox" id="widget-featured-tag-show-author-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][showauthor]" 
+                <?php checked( $showauthor,true ); ?>  /></input>
+                </label>
+            </p>    
         
 	<?php } else { echo 'Tag: No Tag found ( <i>Insert at least one Tag in any post</i> )'; }?>           
     <input type="hidden" id="widget-featured-tag-submit-<?php echo $number; ?>" name="widget-featured-tag[<?php echo $number; ?>][submit]" value="1" />
