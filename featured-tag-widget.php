@@ -4,7 +4,7 @@ Plugin Name: Featured Tag Widget
 Plugin URI: http://wordpress.org/extend/plugins/featured-tag-widget/
 Description: This widget plugin displays in your sidebar a list of posts (and much more) for a particular Tag. You can also add multiple instances of the widget.
 Author: Andrea Developer
-Version: 0.8
+Version: 0.9
 Author URI: http://wordpress.org/extend/plugins/featured-tag-widget/
 
 This program is free software; you can redistribute it and/or
@@ -84,27 +84,29 @@ function widget_ftwp( $args, $widget_args = 1 ) {
                     <?php if ($showimage){ ?>
 						<?php $thumb_url = get_thumb_url(); 
 						if ($thumb_url){ ?>
-							<div class="thumbnail"><img src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>" /></div>
+							<div class="thumbnail">
+								<a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>" /> </a><br />
+							</div>
 						 <?php } ?>
                 <?php } ?>
                         
                 <?php if (($showtitle)or($showauthor)){ ?>
-                    <div class="featured_tag_post">
+                    <div class="featured_tag_post"><li>
                         <?php if ($showtitle){ ?>
-                            <strong class="post-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></strong><br />
+                            <span class="post-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></span><br />
                         <?php } ?>
                         <?php if ($showauthor){ ?>
                             <span class="byline"><em><?php the_author_posts_link(); ?></em></span><br />
                         <?php } ?>
-                        <br />         
-                    </div>
+                        <!--<br />-->         
+                    </li></div>
 				<?php } ?>
 
 			  <?php endwhile; else: ?>
               <?php _e('No posts - Featured Tag.'); ?>
               <?php endif; ?>
               
-           
+           <br />
           <?php
           //echo $after_widget;
 		  

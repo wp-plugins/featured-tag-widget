@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: tag, featured, sidebar, widget, multi-widget, text, plugin, gallery, magazine, post, title, author, thumbnail, image, number
 Requires at least: 2.7
 Tested up to: 2.9
-Stable tag: 0.8
+Stable tag: 0.9
 
 This widget plugin displays a list of posts (and much more) for a particular Tag in your sidebar. You can also add multiple instances of this widget.  
 
@@ -97,8 +97,14 @@ Thank you.
 
 == Changelog ==
 
+= 0.9 =
+* Image link to post
+* Show post titles as HTML list 
+* Better item spacing
+
 = 0.8 =
 * Added Tag info in the Admin dropdown menu - Tag: " Name - ID - (total posts) ". Now you know the tagID and how many posts exist for each tag.
+
 = 0.7 =
 * Added a Custom Text area. An optional description of the content or whatever.
 
@@ -140,6 +146,10 @@ Thank you.
 
 This widget plugin takes image thumbnails only if they are present as thumb in the post.
 If you have multiple images thumb in your post, it will take thumb of the first uploaded image.
+
+= Do you accept donations?  =
+
+Yes I do.
 
 
 * Waiting for other questions...
